@@ -1,6 +1,6 @@
 require('./connections/connection.mongo')();
 require('./connections/connection.mysql')();
-// const client = require('./connections/connection.redis')();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -21,8 +21,7 @@ app.get('/', (req, res) => {
 const authRoute = require('./routes/route.auth')();
 app.use('/api/v1/auth', authRoute);
 
-//Temporarily suspending our token law enforcer
-// app.use(tokenMiddleware());
+
 
 //User Rooute
 const userRoute = require('./routes/route.user')();

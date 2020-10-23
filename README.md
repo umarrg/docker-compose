@@ -1,2 +1,2 @@
 # lexclass
-Lex Hub Training Class
+Lex docker
